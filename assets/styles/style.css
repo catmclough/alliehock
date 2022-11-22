@@ -1,0 +1,74 @@
+body,
+html {
+    height: 200vh;
+}
+
+body {
+    background-color: #e0c5a7;
+}
+
+#extra-colors {
+    color: #4b5026;
+    color: #e59808;
+    color: #be4113;
+    color: #320126;
+    color: #fef6eb;
+    color: #e0c5a7;
+    color: #c37311;
+    color: #a65324;
+    color: #3c4836;
+    color: #212720;
+}
+
+#splash {
+    background-image: url("/assets/images/mark-adriane-unsplash.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 95vh;
+}
+
+#name {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 80px;
+    display: inline-block;
+    font-size: 80px;
+    font-family: "PT Sans", sans-serif;
+    /* font-family: "BhuTuka Expanded One", cursive; */
+    /* font-family: "Fugaz One", cursive; */
+    /* font-family: "Yatra One", cursive; */
+    color: #fef6eb;
+    letter-spacing: 8px;
+}
+
+nav {
+    margin-top: 65px;
+    margin-right: 80px;
+    float: right;
+    min-width: 33vw;
+    max-width: 45vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    font-family: "PT Sans", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+    color: #fef6eb;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* text-decoration: overline; */
+    text-decoration: underline;
+}
+
+#nav-separator {
+    font-size: 20px;
+    color: #212720;
+}
