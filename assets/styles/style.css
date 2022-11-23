@@ -10,6 +10,10 @@ body {
     margin-bottom: 2vh;
 }
 
+section {
+    padding: 5rem 10rem;
+}
+
 h1,
 h2 {
     /* font-family: "PT Sans", sans-serif; */
@@ -118,12 +122,6 @@ nav {
     color: #fef6eb;
 }
 
-section {
-    width: 90vw;
-    margin-top: 5vh;
-    margin-left: 5vw;
-}
-
 #projects-header {
     float: right;
 }
@@ -140,6 +138,7 @@ section {
 
 #projects-table tr td {
     background-color: #3c4836;
+    width: 50%;
 }
 
 #about-content {
