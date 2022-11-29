@@ -5,7 +5,7 @@
     --white: #fef6eb;
 }
 
-/* biggest small screen: 465px */
+/* header: biggest small screen: 1000px */
 
 body,
 html {
@@ -13,25 +13,11 @@ html {
     overflow-x: hidden;
 }
 
-header {
-    position: absolute;
-    width: 100%;
-
-    /* mobile */
-    text-align: center;
-    margin-top: 10px;
-    line-height: 1.2;
-}
-
 body {
     background-color: var(--background-color);
     font-family: var(--text-font);
     color: var(--white);
     margin: 0;
-}
-
-section {
-    padding: 5rem 10rem;
 }
 
 h1,
@@ -60,6 +46,11 @@ h1 {
     color: #212720;
 }
 
+header {
+    position: absolute;
+    width: 100%;
+}
+
 #name {
     /* desktop only */
     /* margin-top: 30px;
@@ -81,10 +72,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    /* small screen */
-    margin: auto;
-    padding: 10px;
 }
 
 .navlink {
@@ -122,6 +109,40 @@ nav {
 #nav-separator {
     font-size: 10px;
     color: var(--white);
+}
+
+/* header's size-specific styles */
+/* xl screen */
+@media (min-width: 1741px) {
+    nav {
+        max-width: none;
+    }
+}
+
+@media (min-width: 1001px) {
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #name,
+    nav {
+        margin: 30px;
+    }
+}
+
+/* small screen */
+@media (max-width: 1000px) {
+    header {
+        text-align: center;
+        margin-top: 10px;
+        line-height: 1.2;
+    }
+
+    nav {
+        margin: auto;
+        padding: 10px;
+    }
 }
 
 #splash {
