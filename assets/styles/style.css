@@ -5,16 +5,29 @@
     --white: #fef6eb;
 }
 
+/* biggest small screen: 465px */
+
 body,
 html {
-    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+
+    /* mobile */
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.2;
 }
 
 body {
     background-color: var(--background-color);
     font-family: var(--text-font);
     color: var(--white);
-    margin-bottom: 2vh;
+    margin: 0;
 }
 
 section {
@@ -34,30 +47,6 @@ h1 {
     letter-spacing: 6px;
 }
 
-h2 {
-    font-size: 60px;
-    letter-spacing: 4px;
-    text-decoration: underline;
-}
-
-p {
-    color: #3c4836;
-    font-size: 22px;
-    line-height: 3rem;
-}
-
-a {
-    color: var(--white);
-}
-
-section {
-    padding-bottom: 55px;
-}
-
-footer {
-    text-align: center;
-}
-
 #extra-colors {
     color: #4b5026;
     color: #e59808;
@@ -71,39 +60,45 @@ footer {
     color: #212720;
 }
 
-#splash {
-    background-image: url("/assets/images/mark-adriane-unsplash.jpg");
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height: 95vh;
-}
-
 #name {
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 80px;
-    display: inline-block;
+    /* desktop only */
+    /* margin-top: 30px;
+    margin-left: 80px; */
+
+    /* small screen */
+    margin: 10px;
 }
 
 nav {
-    margin-top: 65px;
+    /* large screen stuff */
+    /* margin-top: 65px;
     margin-right: 80px;
     float: right;
     min-width: 33vw;
-    max-width: 45vw;
+    max-width: 45vw; */
+
+    max-width: 528px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    /* small screen */
+    margin: auto;
+    padding: 10px;
 }
 
 .navlink {
-    text-decoration: none;
-    font-size: 32px;
     display: inline-block;
     position: relative;
+
+    /* large display */
+    /* font-size: 32px; */
+    /* text-decoration: none; */
+
+    /* small display */
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .navlink::after {
@@ -127,6 +122,22 @@ nav {
 #nav-separator {
     font-size: 10px;
     color: var(--white);
+}
+
+#splash {
+    background-image: url("/assets/images/mark-adriane-unsplash.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 95vh;
+}
+
+h2 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-decoration: underline;
 }
 
 #projects-header {
@@ -157,4 +168,18 @@ nav {
     float: right;
     margin-left: 10px;
     margin-bottom: 10px;
+}
+
+p {
+    color: #3c4836;
+    font-size: 22px;
+    line-height: 3rem;
+}
+
+a {
+    color: var(--white);
+}
+
+footer {
+    text-align: center;
 }
