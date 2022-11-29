@@ -136,16 +136,14 @@ nav {
 #projects-table {
     width: 100%;
     text-align: center;
-    border-spacing: 10px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
 }
 
-#projects-table tr {
-    height: 20vh;
-}
-
-#projects-table tr td {
+.project {
     background-color: #3c4836;
-    width: 50%;
+    height: 20vh;
 }
 
 #about-content {
