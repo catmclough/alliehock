@@ -49,6 +49,8 @@ h1 {
 header {
     position: absolute;
     width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 #name {
@@ -128,6 +130,11 @@ h2 {
 
 /* xl screens */
 @media (min-width: 1741px) {
+    #name,
+    nav {
+        margin: 30px;
+    }
+
     nav {
         max-width: none;
     }
@@ -143,12 +150,7 @@ h2 {
 }
 
 /* medium-large screens */
-@media (min-width: 1001px) and (max-width: 1740px) {
-    header {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
+@media (min-width: 1101px) and (max-width: 1740px) {
     #name,
     nav {
         margin: 30px;
@@ -171,8 +173,9 @@ h2 {
 }
 
 /* all small screens */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     header {
+        display: block;
         text-align: center;
         margin-top: 10px;
         line-height: 1.2;
