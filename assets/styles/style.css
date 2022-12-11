@@ -111,15 +111,39 @@ nav {
     color: var(--white);
 }
 
-/* header's size-specific styles */
-/* xl screen */
+h2 {
+    font-size: 60px;
+    margin: 0.83em;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#al-photo {
+    max-width: 100%;
+    width: 22em;
+    float: right;
+    margin: 20px;
+}
+
+/* xl screens */
 @media (min-width: 1741px) {
     nav {
         max-width: none;
     }
+
+    #al-photo {
+        width: 30em;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 2.5em;
+    }
 }
 
-@media (min-width: 1001px) {
+/* medium-large screens */
+@media (min-width: 1001px) and (max-width: 1740px) {
     header {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -129,9 +153,24 @@ nav {
     nav {
         margin: 30px;
     }
+
+    p {
+        font-size: 18px;
+        line-height: 2em;
+    }
 }
 
-/* small screen */
+/* x-small screens only */
+@media (max-width: 699px) {
+    #al-photo {
+        width: 22em;
+        display: block;
+        margin: auto;
+        float: none;
+    }
+}
+
+/* all small screens */
 @media (max-width: 1000px) {
     header {
         text-align: center;
@@ -143,6 +182,17 @@ nav {
         margin: auto;
         padding: 10px;
     }
+
+    h2 {
+        font-size: 50px;
+        margin: 0.4em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
 }
 
 #splash {
@@ -153,12 +203,6 @@ nav {
     background-size: cover;
 
     height: 95vh;
-}
-
-h2 {
-    font-size: 60px;
-    letter-spacing: 4px;
-    text-decoration: underline;
 }
 
 #projects-header {
@@ -183,18 +227,8 @@ h2 {
     margin-left: 10%;
 }
 
-#al-photo {
-    width: 30rem;
-    max-width: 100%;
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
 p {
     color: #3c4836;
-    font-size: 22px;
-    line-height: 3rem;
 }
 
 a {
