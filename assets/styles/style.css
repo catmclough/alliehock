@@ -3,6 +3,7 @@
     --header-font: "Fugaz One", cursive;
     --text-font: "Noto Sans Lao Looped", sans-serif;
     --white: #fef6eb;
+    --green: #3c4836;
 }
 
 /* header: biggest small screen: 1000px */
@@ -119,6 +120,7 @@ h2 {
     letter-spacing: 4px;
     text-decoration: underline;
     text-align: left;
+    color: var(--white);
 }
 
 #al-photo {
@@ -208,8 +210,12 @@ h2 {
     height: 95vh;
 }
 
-#projects-header {
+.right {
     float: right;
+}
+
+.center {
+    text-align: center;
 }
 
 #projects-table {
@@ -221,17 +227,41 @@ h2 {
 }
 
 .project {
-    background-color: #3c4836;
+    background-color: var(--green);
     height: 20vh;
 }
 
-#about-content {
+.text-content {
     width: 80%;
     margin-left: 10%;
+    display: inline-block;
 }
 
-p {
-    color: #3c4836;
+#about-section {
+    color: var(--green);
+    padding: 2em 0 6em 0;
+}
+
+#contact-section {
+    background-color: var(--green);
+    padding-bottom: 6em;
+    margin-bottom: 1em;
+}
+
+.contact-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+#divider {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--background-color);
+    border: none;
+    height: 15px;
 }
 
 a {
@@ -240,4 +270,5 @@ a {
 
 footer {
     text-align: center;
+    margin-bottom: 1em;
 }
