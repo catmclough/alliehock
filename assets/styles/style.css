@@ -81,13 +81,8 @@ nav {
     display: inline-block;
     position: relative;
 
-    /* large display */
-    /* font-size: 32px; */
-    /* text-decoration: none; */
-
-    /* small display */
+    text-decoration: none;
     font-size: 24px;
-    text-decoration: underline;
     font-weight: 700;
 }
 
@@ -186,6 +181,10 @@ h2 {
     nav {
         margin: auto;
         padding: 10px;
+    }
+
+    .navlink {
+        text-decoration: underline;
     }
 
     h2 {
