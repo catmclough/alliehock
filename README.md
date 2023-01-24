@@ -1,9 +1,20 @@
 # Allie's Personal Site
 
+This is a static, responsive website made of HTML and CSS for Allie's personal info and projects.
+
+### Local Development
+
+To run the app locally, I use browsersync
+
+```bash
+npm install -g browser-sync
+```
+
+```bash
+browser-sync start --server --files 'assets/styles/*.css,index.html'
+```
+
 ### Images
 
 -   [Silverlake Road](https://unsplash.com/photos/ma040gG3Mjg)
-
-```
-Photo by <a href="https://unsplash.com/@markadriane?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">MARK ADRIANE</a> on <a href="https://unsplash.com/s/photos/los-angeles?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-```
+-   Photo of Allie is her own
